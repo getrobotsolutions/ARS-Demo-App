@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script> 
+    
+
+  <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+  <link href="css/services.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+
+<body >
+
+<header >
+  <div class="logo">
+      <img src="../../assets/logo.png" onclick="FC_ContentsCall('Home')">
+    </div>
+</header>
+<nav>
+  <img src="../../assets/icons/home.png" class="img-home" onclick="FC_ContentsCall('Home')">
+</nav>
+  <section class="main-content">
+    <h1 class="title">OUR SERVICES</h1>
+    <div class="navigation">
+      <div class="row">
+        <!--<div class="col-sm-1"></div>-->
+        <div class="col-sm-6 navigation-box" style="" onclick="FC_ContentsCall('')">
+            <img src="../../assets/icons/software-icon.png" class="navigation-icon">
+            <h2 class="navigation-text">SOFTWARE</h2> 
+        </div>
+        <div class="col-sm-6 navigation-box" style="" onclick="FC_ContentsCall('')">
+            <img src="../../assets/icons/hardware-icon.png" class="navigation-icon">
+            <h2 class="navigation-text">HARDWARE</h2> 
+        </div>
+
+      </div>
+
+      
+      <div class="row">
+        <div class="col-sm-6 navigation-box" style="" onclick="FC_ContentsCall('')">
+         
+            <img src="../../assets/icons/rentals-icon.png" class="navigation-icon" width="250">
+            <h2 class="navigation-text" >EVENT RENTALS</h2>
+          
+        </div>
+        <div class="col-sm-6 navigation-box" style="" onclick="FC_ContentsCall('')">
+            <img src="../../assets/icons/signposts.png" class="navigation-icon">
+            <h2 class="navigation-text">WAYFINDING</h2> 
+        </div>
+      </div>
+    </div>
+      
+  </section>
+  <footer>
+    <img src="../../assets/footer.png" width="1080">
+  </footer>
+
+<div id="dialog-overlay1"></div>
+      <div id="dialog-box1"><a class="btn-ok">Close</a>
+        <div id="dialog-content1">
+            <div id="dialog-message"> </div>
+        </div>
+
+      </div>
+</body>
+
+
+<script language="JavaScript" type="text/javascript" src="js/services.js"></script>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+
+<script language="javascript" type="text/javascript">
+    //window.history.forward();
+</script>
+<style type="text/css">
+  .navigation{
+    width: 900px;
+  }
+  .title{
+    font-size: 60px;
+    background-color: #ffffff;
+    border: 10px solid #00bbe2;
+    width: 900px;
+    font-weight: bold;
+  }
+  .navigation-box{
+    width: 440px;
+    height: 400px;
+    margin-bottom: 40px;
+  }
+  .navigation-text{
+    font-size: 45px;
+  }
+  .navigation-icon{
+    
+  }
+</style>
+
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+    <script src="boots/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+    
+    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+
+  <header onclick="">
+    <div class="config" onclick="FC_ContentsCall('Config')">
+        <img src="assets/config.png" height="58">
+    </div>
+    <!--<div class="img-home" onclick="location.href ='maincontents.htm'"></div>-->
+    <div class="logo">
+      <img src="assets/logo.png" onclick="FC_ContentsCall('')">
+    </div>
+    <div class="main2" onclick="location.href='maincontents.htm'">
+        <img src="assets/config.png" height="58">
+    </div>
+
+  </header>
+  <nav></nav>
+  <section class="main-content">
+    
+    <div class="navigation">
+
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('PrizeWheel')">
+        <div style="">
+          <img src="assets/icons/fortune-wheel.png" class="navigation-icon">
+          <h2 class="navigation-text">PRIZE WHEEL</h2> 
+        </div>
+        
+      </div>
+      
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('SlotMachine')">
+        <div style="">
+          <img src="assets/icons/slot-machine-with-sevens-2.png" class="navigation-icon" width="250">
+          <h2 class="navigation-text" >SLOTMACHINE</h2>
+        </div>
+      </div>
+      <div class="col-sm-4 navigation-box" style="" onclick="GetJoke()">
+        <div style="">
+          <img src="assets/icons/joke.png" class="navigation-icon" width="250">
+          <h2 class="navigation-text">JOKES</h2>
+        </div>
+      </div>
+      <div class="col-sm-4 navigation-box" style=""  onclick="FC_ContentsCall('Dance')">
+        <div style="" >
+          <img src="assets/icons/dance.png" class="navigation-icon" width="250">
+          <h2 class="navigation-text" style="">DANCE</h2>
+        </div>
+      </div>
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('MatchGame')">
+        <div style="">
+          <img src="assets/icons/game.png" class="navigation-icon" style="">
+          <h2 class="navigation-text">MATCHING</h2>
+        </div>
+      </div>
+
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('Pictures')">
+        <div style="">
+          <img src="assets/icons/video-player-4.png" class="navigation-icon" >
+          <h2 class="navigation-text" style="">PICTURES</h2>
+        </div>
+      </div>
+      
+
+      
+    </div>
+
+  </section>
+<footer>
+  <img src="assets/footer.png">
+  
+</footer>
+
+  <div id="dialog-overlay"></div>
+  <div id="dialog-box">
+  </div>
+<script type="text/javascript">
+  function GetJoke(){
+    var temp=Math.floor((Math.random() * 9) + 1);
+      PlaySpeech(jokes[temp]);
+      //alert(jokes[temp]);
+    }
+</script>
+  <style type="text/css">
+    nav {
+      height: 0px;
+    }
+    .main-content {
+      height: 1190px;
+      margin-top: 0;
+      padding-top: 100px;
+      background-color: ;
+      border-top: 20px solid #00bbe2;
+    }
+  </style>
+
+</body>
+</html>

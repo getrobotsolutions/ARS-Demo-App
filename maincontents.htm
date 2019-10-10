@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+    <script src="boots/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+    
+    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+
+  <header onclick="">
+    <div class="config" onclick="FC_ContentsCall('Config')">
+        <img src="assets/config.png" height="58">
+    </div>
+    <!--<div class="img-home" onclick="location.href ='maincontents.htm'"></div>-->
+    <div class="logo">
+      <img src="assets/logo.png" onclick="FC_ContentsCall('')">
+    </div>
+    <div class="main2" onclick="location.href='main-2.htm'">
+        <img src="assets/config.png" height="58">
+    </div>
+
+  </header>
+  <nav></nav>
+  <section class="main-content">
+    
+    <div class="navigation">
+
+      <div class="col-sm-4 navigation-box" style="" onclick="">
+        <div style="">
+          <img src="assets/icons/calendar.png" class="navigation-icon">
+          <h2 class="navigation-text">SCHEDULE</h2> 
+        </div>
+        
+      </div>
+      
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('Maps')">
+        <div style="">
+          <img src="assets/icons/map.png" class="navigation-icon" width="250">
+          <h2 class="navigation-text" >MAP</h2>
+        </div>
+      </div>
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('Videos')">
+        <div style="">
+          <img src="assets/icons/video-player-4.png" class="navigation-icon" width="250">
+          <h2 class="navigation-text">VIDEOS</h2>
+        </div>
+      </div>
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('Team')">
+        <div style="">
+          <img src="assets/icons/team-icon.png" class="navigation-icon" style="">
+          <h2 class="navigation-text">OUR TEAM</h2>
+        </div>
+      </div>
+
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('Services')">
+        <div style="">
+          <img src="assets/icons/services-icon.png" class="navigation-icon" >
+          <h2 class="navigation-text" style="">SERVICES</h2>
+        </div>
+      </div>
+      
+
+      <div class="col-sm-4 navigation-box" style=""  onclick="FC_ContentsCall('Survey')">
+        <div style="" >
+          <img src="assets/icons/survey-3.png" class="navigation-icon" width="250">
+          <h2 class="navigation-text" style="">SURVEY</h2>
+        </div>
+      </div>
+    </div>
+
+  </section>
+<footer>
+  <img src="assets/footer.png">
+  
+</footer>
+
+  <div id="dialog-overlay"></div>
+  <div id="dialog-box">
+  </div>
+  </script>
+  <style type="text/css">
+    nav {
+      height: 0px;
+    }
+    .main-content {
+      height: 1190px;
+      margin-top: 0;
+      padding-top: 100px;
+      background-color: ;
+      border-top: 20px solid #00bbe2;
+    }
+  </style>
+
+</body>
+</html>
