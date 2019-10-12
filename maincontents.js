@@ -59,6 +59,26 @@ function FC_ContentsCall(strContentsName, strLanguage)
             //PlaySpeech(speak[5]);
             break;
 
+        case "EventRentals":
+            location.href = "../EventRentals/index.html";
+            //PlaySpeech(speak[5]);
+            break;
+
+        case "BackToRentals":
+            location.href = "../EventRentals/index.html";
+            //PlaySpeech(speak[5]);
+            break;
+
+        case "TradeShows":
+            location.href = "../TradeShows/index.html";
+            //PlaySpeech(speak[5]);
+            break;
+
+        case "BackToServices":
+            location.href = "../Services/index.html";
+            //PlaySpeech(speak[5]);
+            break;
+
         case "PrizeWheel":
             location.href = "Contents/PrizeWheel/index.html";
             //PlaySpeech(speak[1]);

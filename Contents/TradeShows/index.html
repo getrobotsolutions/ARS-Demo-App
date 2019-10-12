@@ -16,11 +16,8 @@
 
   <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
-  <link href="css/services.css" rel="stylesheet" type="text/css" />
-
-
+  <link href="css/tradeshow.css" rel="stylesheet" type="text/css" />
 </head>
-
 
 <body >
 
@@ -30,39 +27,20 @@
     </div>
 </header>
 <nav>
-  <img src="../../assets/icons/home.png" class="img-home" onclick="FC_ContentsCall('Home')">
+  <img src="../../assets/icons/home.png" class="img-home" onclick="FC_ContentsCall('BackToRentals')">
 </nav>
   <section class="main-content">
-    <h1 class="title">OUR SERVICES</h1>
-    <div class="navigation">
-      <div class="row">
-        <!--<div class="col-sm-1"></div>-->
-        <div class="col-sm-6 navigation-box" style="" onclick="FC_ContentsCall('')">
-            <img src="../../assets/icons/software-icon.png" class="navigation-icon">
-            <h2 class="navigation-text">SOFTWARE</h2> 
-        </div>
-        <div class="col-sm-6 navigation-box" style="" onclick="FC_ContentsCall('')">
-            <img src="../../assets/icons/hardware-icon.png" class="navigation-icon">
-            <h2 class="navigation-text">HARDWARE</h2> 
-        </div>
-
+    <h1 class="title">TRADE SHOWS</h1>
+      <div class="bmg">
+            <div class="wrap tradeslider">
+              
+               
+               <div class="slider-nav" class="">
+                <a href="#" class="prev-img" onclick="change(-1)" ><img src="images/previous.png"></a>
+                <a href="#" class="next-img" onclick="change(1)" class="next-img"><img src="images/next.png"></a>    
+              </div>
+              <img src="images/slide1.png" name="pic1" width="870">
       </div>
-
-      
-      <div class="row">
-        <div class="col-sm-6 navigation-box" style="" onclick="FC_ContentsCall('EventRentals')">
-         
-            <img src="../../assets/icons/rentals-icon.png" class="navigation-icon" width="250">
-            <h2 class="navigation-text" >EVENT RENTALS</h2>
-          
-        </div>
-        <div class="col-sm-6 navigation-box" style="" onclick="FC_ContentsCall('')">
-            <img src="../../assets/icons/signposts.png" class="navigation-icon">
-            <h2 class="navigation-text">WAYFINDING</h2> 
-        </div>
-      </div>
-    </div>
-      
   </section>
   <footer>
     <img src="../../assets/footer.png" width="1080">
@@ -78,11 +56,23 @@
 </body>
 
 
-<script language="JavaScript" type="text/javascript" src="js/services.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/TradeShows.js"></script>
 <script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
 
 <script language="javascript" type="text/javascript">
     //window.history.forward();
+    var i=1,j=0;
+    function change(j){
+        i+=j;
+        if(i>6){
+          i=1;
+        }
+
+        if(i<=0){
+          i=6;
+        }
+        document.pic1.src="images/" + i + ".jpg";    
+    }
 </script>
 <style type="text/css">
   .navigation{
